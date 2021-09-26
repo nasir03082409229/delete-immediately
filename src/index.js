@@ -8,13 +8,13 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
-import search_icon from '../assets/images/search_icon.png';
-import sort_icon from '../assets/images/sort_icon.png';
-import filter_icon from '../assets/images/filter_icon.png';
-import avatar from '../assets/images/avatar.png';
-import red_warning from '../assets/images/red_warning.png';
-import arrow_right_blue from '../assets/images/arrow_right_blue.png';
-import lock_orange from '../assets/images/lock_orange.png';
+import search_icon from './assets/images/search_icon.png';
+import sort_icon from './assets/images/sort_icon.png';
+import filter_icon from './assets/images/filter_icon.png';
+import avatar from './assets/images/avatar.png';
+import red_warning from './assets/images/red_warning.png';
+import arrow_right_blue from './assets/images/arrow_right_blue.png';
+import lock_orange from './assets/images/lock_orange.png';
 
 export default Beneficiaries = () => {
   return (
@@ -124,9 +124,9 @@ export default Beneficiaries = () => {
 };
 
 const styles = StyleSheet.create({
-  safeAreaContainer: {flex: 1, paddingTop: StatusBar.currentHeight},
-  tagsContainer: {flexDirection: 'row', paddingHorizontal: 12},
-  tagContainer: {flexDirection: 'row', flex: 1},
+  safeAreaContainer: { flex: 1, paddingTop: StatusBar.currentHeight },
+  tagsContainer: { flexDirection: 'row', paddingHorizontal: 20 },
+  tagContainer: { flexDirection: 'row', flex: 1 },
   activeTagBtn: {
     borderRadius: 25,
     backgroundColor: '#1E3252',
@@ -142,15 +142,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     fontSize: 15,
     paddingVertical: 8,
+    fontFamily: 'Inter-Medium'
   },
   inActiveTag: {
     marginHorizontal: 10,
     color: '#333239',
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
     fontSize: 15,
     paddingVertical: 8,
+    fontFamily: 'Inter-Medium'
+
   },
-  filterContainer: {flexDirection: 'row', justifyContent: 'space-around'},
+  filterContainer: { flexDirection: 'row', justifyContent: 'space-around' },
   filterIconContainer: {
     backgroundColor: '#E9EDF4',
     justifyContent: 'center',
@@ -162,37 +165,39 @@ const styles = StyleSheet.create({
   },
   sectionHeaderContainer: {
     backgroundColor: '#E9EDF4',
-    height: 42,
+    height: 45,
     marginTop: 16,
     justifyContent: 'center',
   },
-  sectionHeaderText: {fontSize: 16, marginHorizontal: 25, fontWeight: 'bold'},
+  sectionHeaderText: { fontSize: 16, marginHorizontal: 25, fontWeight: 'bold' },
   sectionItemContainer: {
     backgroundColor: '#fff',
     flexDirection: 'row',
-    marginTop : 5,
     alignItems: 'center',
     paddingVertical: 10,
+    fontFamily: 'Manrope-ExtraBold'
   },
-  flex1: {flex: 1},
+  flex1: { flex: 1 },
   itemHeader: {
     fontSize: 18,
     marginHorizontal: 25,
-    fontWeight: '800',
     color: '#333239',
     marginBottom: 3,
+    fontFamily: 'Manrope-ExtraBold'
+
   },
   itemSubHeader: {
     fontSize: 16,
     marginHorizontal: 25,
     color: '#73839D',
     marginTop: 3,
+    fontFamily: 'Inter-Regular'
   },
   avatarContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     marginHorizontal: 10,
   },
-  warningImage: {width: 20, height: 20, marginHorizontal: 15},
-  arrowRight: {width: 20, height: 20},
+  warningImage: { width: 20, height: 20, marginHorizontal: 15 },
+  arrowRight: { width: 12, height: 12 },
 });
